@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
 html {
-  line-height: 0
+  line-height: 1;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
-
     .container {
+      position: relative;
+      width: 100%;
       text-align: center;
     }
+
     #minhaImagem {
+      display: none;
+    }
+    map {
       display: none;
     }
     #backgroundDesk {
@@ -22,11 +27,16 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 @media (max-width:480px) { 
 /* 0000 */
     .container {
+      position: relative;
+      width: 100%;
       text-align: center;
     }
     #minhaImagem {
       display: initial;
       width: 400px
+    }
+    map {
+      display: initial;
     }
     #backgroundDesk {
       display: none;
