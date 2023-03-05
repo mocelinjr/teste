@@ -5,10 +5,10 @@
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
 <div id="ac_style_samples-nightingale-rose-chart" style="display:none;">
 html, body, #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 90%;
+    height: 90%;
+    margin: 2;
+    padding: 2;
 }
 </div>
 <script>(function(){
@@ -85,7 +85,7 @@ anychart.onDocumentReady(function () {
 
 <script>
 	var slider = document.getElementById("myRange");
-	var output = document.getElementById("myRange");
+	var output = document.getElementById("demo");
 	output.innerHTML = slider.value; // Display the default slider value
 
 	// Update the current slider value (each time you drag the slider handle)
@@ -93,5 +93,6 @@ anychart.onDocumentReady(function () {
 	output.innerHTML = this.value;
 	}
 </script>
-	
+<div id="demo">TEXTO</div>	
 </div>
+ 
