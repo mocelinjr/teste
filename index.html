@@ -1,18 +1,20 @@
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        
-        <meta name="description" content="">
-        <meta name="author" content="Marcio Mocelin">
-        <title>Gráfico do Mocelin</title>
-
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    
-    <body>      
-        <div id="container"></div>
-    </body>
-    <script src="js/scripts.js"></script>
-
+<iframe id="anychart-iframe-embed-samples-nightingale-rose-chart" src="about:blank" frameBorder="0" class="anychart-embed anychart-embed-samples-nightingale-rose-chart"></iframe>
+<script type="text/javascript">(function(){
+function ac_add_to_head(el){
+	var head = document.getElementsByTagName('head')[0];
+	head.insertBefore(el,head.firstChild);
+}
+function ac_add_style(css){
+	var ac_style = document.createElement('style');
+	if (ac_style.styleSheet) ac_style.styleSheet.cssText = css;
+	else ac_style.appendChild(document.createTextNode(css));
+	ac_add_to_head(ac_style);
+}
+ac_add_style(".anychart-embed-samples-nightingale-rose-chart{width:600px;height:450px;}");
+var doc = document.getElementById('anychart-iframe-embed-samples-nightingale-rose-chart').contentWindow.document;
+doc.open();
+doc.write("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\" \/><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\" \/><meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" \/><title>Nightingale Rose Chart<\/title><link href=\"https:\/\/playground.anychart.com\/chartopedia\/samples\/Nightingale_Rose_Chart\/iframe\" rel=\"canonical\" \/><meta content=\"Multi-Series Chart,Polar Chart,Stacked Chart\" name=\"keywords\" \/><meta content=\"AnyChart - JavaScript Charts designed to be embedded and integrated\" name=\"description\" \/><!--[if lt IE 9]>\n<script src=\"https:\/\/oss.maxcdn.com\/html5shiv\/3.7.3\/html5shiv.min.js\"><\/script>\n<script src=\"https:\/\/oss.maxcdn.com\/respond\/1.4.2\/respond.min.js\"><\/script>\n<![endif]--><link href=\"https:\/\/cdn.anychart.com\/releases\/v8\/css\/anychart-ui.min.css\" rel=\"stylesheet\" type=\"text\/css\" \/><link href=\"https:\/\/cdn.anychart.com\/releases\/v8\/fonts\/css\/anychart-font.min.css\" rel=\"stylesheet\" type=\"text\/css\" \/><style>html, body, #container {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n}<\/style><\/head><body><div id=\"container\"><\/div><script src=\"https:\/\/cdn.anychart.com\/releases\/v8\/js\/anychart-base.min.js\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/v8\/js\/anychart-polar.min.js\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/v8\/js\/anychart-exports.min.js\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/v8\/js\/anychart-ui.min.js\"><\/script><script type=\"text\/javascript\">anychart.onDocumentReady(function () {\n    \/\/ create polar chart\n    var chart = anychart.polar();\n\n    \/\/ create data set on our data\n    chartData = {\n        rows: [\n            ['Jan', 12814, 3054, 4376, 4229],\n            ['Feb', 8814, 5067, 13987, 3932],\n            ['Mar', 11624, 7004, 3574, 5221],\n            ['Apr', 8814, 9054, 4376, 5256],\n            ['May', 9998, 5043, 4572, 3308],\n            ['Jun', 12321, 15067, 3417, 5432],\n            ['Jul', 10342, 10119, 9231, 9701],\n            ['Aug', 4814, 3054, 4376, 4229],\n            ['Sep', 8814, 5067, 3987, 3932],\n            ['Oct', 11624, 17004, 3574, 5221],\n            ['Nov', 8814, 9054, 4376, 9256],\n            ['Dec', 12998, 8814, 4572, 3308]\n        ]\n    };\n\n    \/\/ sort data by X\n    chart.sortPointsByX(true)\n    \/\/ set series type\n        .defaultSeriesType('column')\n        \/\/ disable y-axis\n        .yAxis(false)\n        \/\/ set x-scale\n        .xScale('ordinal');\n\n    \/\/ set chart data\n    chart.data(chartData);\n    chart.xGrid(false);\n    chart.yGrid(false);\n\n    \/\/ set stack mod\n    chart.yScale().stackMode('value');\n\n    \/\/ set chart container id\n    chart.container('container');\n    \/\/ initiate chart drawing\n    chart.draw();\n});<\/script><\/body><\/html>");
+doc.close();
+})();</script>
 </html>
