@@ -1,44 +1,7 @@
 @charset "UTF-8";
-
-html {
-  line-height: 1;
-}
-
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-    .container {
-      position: relative;
-      width: 100%;
-      text-align: center;
-    }
-
-    #minhaImagem {
-      display: none;
-    }
-    map {
-      display: none;
-    }
-    #backgroundDesk {
-      display: initial;
-      width: 100%;
-    }
-
-@media (max-width:480px) { 
-/* 0000 */
-    .container {
-      position: relative;
-      width: 100%;
-      text-align: center;
-    }
-    #minhaImagem {
-      display: initial;
-      width: 400px
-    }
-    map {
-      display: initial;
-    }
-    #backgroundDesk {
-      display: none;
-    }
+html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
